@@ -2,6 +2,14 @@ const register_form = document.getElementById("register_form");
 if(register_form) register_form.addEventListener("submit", UserObject);
 
 
+const login_form = document.getElementById("login_form");
+if(login_form) login_form.addEventListener("submit", UserObject);
+
+
+const note_form = document.getElementById("note_form");
+if(note_form) note_form.addEventListener("submit", UserObject);
+
+
 function UserObject(e){
     e.preventDefault();
     let firstname = ((document.getElementById("firstname")||{}).value)||"";
